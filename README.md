@@ -10,12 +10,16 @@ This is a Ruby app that uses Nokogiri to parse the HTML of crawled pages.
 At the moment, it takes a list of pages to look at which means it's not a real
 crawler in the purest sense of the term.
 
-### Running the application
+## Running the application
 
-`bundle exec rake crawl['list_of_base_paths.txt', 'staging']`
+### Meta description tags
 
-`list_of_base_paths.txt` should be a text file with one base path per line
-`staging` can be any environment (`production`, `staging`, `integration`)
+`bundle exec rake crawl:meta_descriptions['app/content/sample_base_paths.txt','staging']`
+
+`sample_base_paths.txt` should be a text file with one base path per line
+(see app/content/sample_base_paths.txt for an example)
+
+`staging` should be a valid GOV.UK environment (production, staging or integration)
 
 ## Licence
 
