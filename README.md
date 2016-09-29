@@ -16,15 +16,12 @@ crawler in the purest sense of the term.
 
 `bundle exec rake crawl:meta_descriptions['app/content/sample_base_paths.txt','staging','errors.txt']`
 
-`sample_base_paths.txt` should be a text file with one base path per line
-(see app/content/sample_base_paths.txt for an example)
-
-`staging` should be a valid GOV.UK environment (production, staging or integration)
-Defaults to `staging` if not defined
-
-`errors.txt` should be the name of a text file that will be created and populated
-with any base paths that do not have a meta description tag
-Defaults to `nil` (no file created) if not defined
+* `sample_base_paths.txt` should be a text file with one base path per line
+(see [app/content/sample_base_paths.txt] for an example)
+* `staging` should be a valid GOV.UK environment (production, staging or integration) - defaults to `staging` if not defined
+* `errors.txt` should be the name of a text file that will be created and populated
+with any base paths that do not have a meta description tag - defaults to `nil`
+(no file created) if not defined
 
 ## Licence
 
