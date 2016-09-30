@@ -33,7 +33,7 @@ namespace :crawl do
             puts "✔ #{base_path} has a meta description tag"
           else
             puts "✘ #{base_path} does not have a meta description tag"
-            error_file.write(base_path) unless error_file.nil?
+            error_file.puts(base_path) unless error_file.nil?
           end
         end
         puts
